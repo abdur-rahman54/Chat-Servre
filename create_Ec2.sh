@@ -1,0 +1,1 @@
+aws ec2 run-instances --image-id ami-02c7683e4ca3ebf58 --instance-type t2.micro --key-name AwsCli --security-groups chatserver --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=ChatServer}]' --count 1
