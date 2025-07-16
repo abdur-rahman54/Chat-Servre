@@ -24,5 +24,12 @@ terraform.rc
 # Backup files
 *.backup
 *.bak
+# Terraform files
+.terraform/           # Contains downloaded providers (large binaries)
+*.tfstate            # State files (may contain secrets)
+*.tfstate.*          # Backup state files
+*.tfvars             # Variable files (may contain secrets)
+.terraform.lock.hcl  # Lock file (can be regenerated)
+terraform.rc         # Local CLI config
 
 git_update
